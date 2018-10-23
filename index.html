@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Monoton|Pridi|Righteous" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+
+<style>
+
+/*pointer*/
+.pointer {
+    cursor: pointer;
+    height: 0.5em;
+    width: 0.5em;
+    margin: 0 0.2em;
+    display: inline-block;
+    background-color: #93ffe4;
+    border-radius: 50%;
+    position: fixed;  
+    z-index: 4;
+    animation: blink 1.5s linear infinite;
+    }
+    @keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: 0.7}
+    100%{opacity: 1;}
+    }
+
+.next {
+    position: absolute; display: inline;
+    left: 98vw; 
+    background-color: transparent;
+    color: transparent;
+}
+
+.aGradient {
+    width: 100vw; height: 100vh;
+	background: linear-gradient(-45deg, #000, #310913, #530f21, #6c001b);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 5s ease infinite;
+	animation: Gradient 5s ease infinite;
+}
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+.gradient {background: linear-gradient(-45deg, #000, #310913, #530f21, #6c001b);}
+.wineBg {background-color: #530f21}
+.cremeTxt {color:#d8d8d0}
+.pinkTxt {color:#f6cdd8}
+
+.cursive {font-family: 'Monoton', cursive;}
+.cursive2 {font-family: 'Righteous', cursive;}
+.thai {font-family: 'Pridi', serif;}
+
+.pageTitle {font-size:5.5vmax;color:white;font-family: 'Righteous', cursive;line-height: 0%}
+@media only screen and (max-width:600px){
+    .pageTitle {font-size: 4.5vmax;line-height: 50%}
+}
+
+.block {padding: 5vmax 1vmax}
+.listHover li:hover {color: white}
+.headLine {font-family: 'Pridi', serif;font-size: 3.5vmax;color:#f6cdd8;padding:1vmax;;line-height: 110%}
+.text {font-family: 'Pridi', serif;font-size: 2vmax;color:#FCf2f5;padding:1vmax;;line-height: 110%}
+.ref {color:#abab9a;font-size: 1vmax;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 150%;padding-top:1vmax}
+
+</style>
+
+<!--title-->
+<div class="aGradient w3-center block" style="padding:0">
+    <div class="w3-row">
+        <span class="cursive" style="font-size:50vmax;color: #74152e;line-height: 90%">A</span>
+        <br>
+        <span class="pageTitle" >
+        Atrial Arrhythmias
+        </span>
+    </div>
+    <div class="thai w3-wide w3-padding" style="color: #d8d8d0;font-size: 2.2vmax">
+       electrophysiology &nbsp; perspective
+    </div>
+    <div class="thai" style="padding-top: 1vmax;font-size: 1.8vmax;color:#abab9a">
+        <a href="https://www.facebook.com/HeartRhythmBox/" style="text-decoration:none">
+        <i class="fab fa-facebook-square" style="font-size: 2vmax;color:#abab9a;"></i>
+        HeartRhythmBox
+        </a>
+    </div>
+    
+</div>
+
+<!--pointer-->
+<div onclick="pointer()"><span class="pointer" style="display: none"></span>  
+
+<!--about-->
+<div class="block wineBg">
+	<div class="w3-row cursive cremeTxt w3-center" style="font-size: 5vmax;">About</div>
+	<div class="w3-row thai" style="font-size:3.5vmax;color:white;padding: 3vmax">
+		Presentation นี้...	
+		<ul class="w3-ul pinkTxt listHover" style="font-size:2.5vmax;padding: 0 2vmax">
+			<li>พูดถึงชนิดต่างๆของ atrial arrhythmias เช่น atrial fibrillation | flutter | tachycardia
+				โดยเน้นที่กลไกการเกิดเป็นหลัก			</li>
+			<li>มี intracardiac electrogram และ 3D-mapping ร่วมด้วย</li>
+			<li>เรื่อง anticoagulation ไม่เน้น</li>
+			<li>ดูจบแล้ว น่าจะรู้จักโรคนี้เพิ่มขึ้นไม่มากก็น้อย</li>
+			<li>อาจจะงงเพิ่มขึ้นบ้าง แต่น่าจะเป็นจุดเริ่มต้นการเรียนรู้ที่ดี</li>
+		</ul>
+	</div>
+	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
+</div>
+
+<!--AF intro-->
+<div class="block w3-black">
+	<div class="w3-cell-row">
+	<div class="w3-cell w3-cell-middle w3-center w3-mobile">
+		<video width="100%" height="auto" autoplay muted loop>
+			<source src="media/AF/AF LAT.mp4" type="video/mp4">
+		</video>
+	</div>
+	<div class="w3-cell w3-center w3-cell-middle w3-mobile">
+		<img src="media/AF/AF EGM.jpg" style="width: 100%;" class="w3-sepia">
+		<img src="media/AF/AF RVR in CHF.jpg" style="width: 100%" class="w3-sepia">
+	</div>
+	</div>
+	<div class="headLine">
+		Atrial Fibrillation = สับสน ไม่สม่ำเสมอ ไม่มีระเบียบ...<br> 
+		ของหัวใจห้องบนทั้งสองห้อง หรืออาจเป็นเฉพาะห้องบนซ้ายห้องเดียวก็ได้</div>
+	<div class="text">
+		ถ้าการทำงานของ AV node ปกติ ไฟฟ้าจากหัวใจห้องบนที่เป็น AF จะนำสู่ห้องล่างอย่างไม่สม่ำเสมอ ทำให้ผู้ป่วยภาวะ AF 
+		มีชีพจรที่ไม่สม่ำเสมอ -- totally irregular.
+	</div>
+	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
+</div>
+
+<!--AF Mech-->
+<div class="block">
+		<div class="w3-container w3-center w3-padding">
+			<img src="media/AF/AFallMechanisms.jpg" style="max-width: 100%;max-height: 60vh">
+			
+		</div>
+		<div class="headLine" style="color:#6c001b">
+			Atrial Fibrillation เกิดได้อย่างไร</div>
+		<div class="text gradient" style="color:#f1f1f1">
+			คำตอบคือ มีหลายปัจจัยและหลายกลไก ไม่ว่าจะเป็น...อายุ โรคประจำตัวต่างๆ กรรมพันธุ์ <br>
+			กลไกที่ทำให้เกิดมีตั้งแต่ การมีจุดปล่อยไฟฟ้าผิดปกติจาก pulmonary veins, การมีพังผืดในหัวใจห้องบน, 
+			ระบบประสาทอัตโนมัติที่ทำงานผิดปกติ และอื่นๆ 
+			<div class="ref">
+				<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5846182/">
+					2017 HRS/EHRA/ECAS/APHRS/SOLAECE expert consensus statement on catheter and surgical ablation of
+					atrial fibrillation</a>
+				</div>
+		</div>
+		
+	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
+</div>
+
+<!--AF PV foci-->
+<div class="block w3-black">
+		<div class="w3-row w3-center w3-padding">
+			<img src="media/AF/PV muscle sleeves.png" style="max-width: 100%;max-height: 60vh">
+		</div>
+			
+		<div class="headLine wineBg">
+			Pulmonary venous muscle sleeves: หนึ่งในจุดกำเนิดของ AF</div>
+		<div class="text">
+			Muscle fibers ที่วิ่งจาก left atrium ไปพันรอบ pulmonary veins (PVs) อาจมีเซลที่ก่อให้เกิดหัวใจเต้นผิดจังหวะ 
+			และเป็นจุดกำเนิดของ AF จากกลไกแบบ trigger และ/หรือ localized reentry <br><br>
+			Focal source ในลักษณะนี้มักจะเป็นกลไกหลักในคนไข้ที่เพิ่งเป็น AF มาในระยะแรก มากกว่าในกลุ่มที่เป็น AF มานานๆ
+			<div class="ref">
+				<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5846182/" target="_blank">
+					2017 HRS/EHRA/ECAS/APHRS/SOLAECE expert consensus statement on catheter and surgical ablation of
+					atrial fibrillation</a> and
+				<a href="https://academic.oup.com/eurheartj/article/37/38/2893/2334964" target="_blank">
+					2016 ESC Guidelines for the management of atrial fibrillation</a>
+				</div>
+		</div>
+		
+	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
+</div>
+
+<!--AF PV foci EGM-->
+<div class="block wineBg">
+		<div class="w3-row w3-center w3-padding">
+			<div class="w3-col s6 w3-padding">
+				<img src="media/AF/Frequent PACs EGM.JPG" style="width:100%">
+			</div>
+			<div class="w3-col s6 w3-padding">
+				<img src="media/AF/PVFocusAF.png" style="width:100%">
+				<div class="ref">
+				<a href="https://www.nejm.org/doi/full/10.1056/NEJM199809033391003" target="_blank">
+					Haïssaguerre, M. NEJM 1998;339:659-66.
+				</a>
+				</div>
+			</div>
+		</div>
+			
+		<div class="headLine wineBg">Focal firing จาก PVs สามารถทำให้เกิดทั้ง premature atrial beats,
+			premature atrial contraction, และ/หรือ atrial fibrillation ได้
+			</div>
+		<div class="text">
+			การทำ pulmonary veins isolatation จึงสามารถช่วยลดการเกิดและการคงอยู่ของ AF ที่เกิดจากกลไกนี้ได้			
+		</div>
+		
+	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
+</div>
+
+<!--end pointer div-->
+</div>
+
+<script src="block navigation.js"></script>
+<script>
+
+//space
+window.addEventListener("keydown", function(event) {
+        event.preventDefault();
+        if (event.keyCode===32) {
+        var p = document.getElementsByClassName("pointer");
+        p[0].style.display = "none";}
+    })
+
+//esc
+window.addEventListener("keydown", function(event) {
+        event.preventDefault();
+        if (event.keyCode===27) {
+        window.unblur()}
+    })
+
+//up arrow
+window.addEventListener("keydown", function(event) {
+    event.preventDefault();
+    if (event.keyCode===38) {
+    blockNav(-1)}
+})
+//down arrow
+window.addEventListener("keydown", function(event) {
+    event.preventDefault();
+    if (event.keyCode===40) {
+    blockNav(1)}
+})
+
+window.ontouchmove = function () {unblur()};
+
+</script>	
+
+</body>
+</html>

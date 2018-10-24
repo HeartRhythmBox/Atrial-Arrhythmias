@@ -88,24 +88,38 @@
 .cursive2 {font-family: 'Righteous', cursive;}
 .thai {font-family: 'Pridi', serif;}
 
+.theA {font-family: 'Monoton', cursive;font-size: 80vh;color:#74152e;line-height: 90%;
+overflow: hidden;white-space: nowrap;text-overflow: clip}
 .pageTitle {font-size:5.5vmax;color:white;font-family: 'Righteous', cursive;line-height: 0%}
 @media only screen and (max-width:600px){
+	.theA {font-size: 50vh;line-height: 110%}
     .pageTitle {font-size: 4.5vmax;line-height: 50%}
 }
 
-.block {padding: 5vmax 1vmax}
+.block {padding: 4vmax 1vmax}
 .listHover li:hover {color: white}
 .headLine {font-family: 'Pridi', serif;font-size: 3.5vmax;color:#f6cdd8;padding:1vmax;;line-height: 110%}
 .text {font-family: 'Pridi', serif;font-size: 2vmax;color:#FCf2f5;padding:1vmax;;line-height: 110%}
 .ref {color:#abab9a;font-size: 1vmax;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 line-height: 150%;padding-top:1vmax}
 
+.Rx1 {margin-left:5%;}
+.Rx2 {margin-left:10%;}
+.Rx3 {margin-left:15%;}
+.Rx4 {margin-left:20%;}
+.RxBullet {font-family: 'Monoton', cursive;text-align: right;font-size: 7vmax;color:#9f1d3f}
+.RxText {font-family: 'Righteous', cursive;font-size:4vmax;color: #f1f1f1;}
+
+@media only screen and (max-width:600px){
+	.Rx1, .Rx2, .Rx3, .Rx4 {margin-left:5%}
+}
+
 </style>
 
 <!--title-->
 <div class="aGradient w3-center block" style="padding:0">
-    <div class="w3-row">
-        <span class="cursive" style="font-size:50vmax;color: #74152e;line-height: 90%">A</span>
+    <div class="w3-row" style="width:100%;display:block">
+        <span class="theA">A</span>
         <br>
         <span class="pageTitle" >
         Atrial Arrhythmias
@@ -132,8 +146,8 @@ line-height: 150%;padding-top:1vmax}
 	<div class="w3-row thai" style="font-size:3.5vmax;color:white;padding: 3vmax">
 		Presentation นี้...	
 		<ul class="w3-ul pinkTxt listHover" style="font-size:2.5vmax;padding: 0 2vmax">
-			<li>พูดถึงชนิดต่างๆของ atrial arrhythmias เช่น atrial fibrillation | flutter | tachycardia
-				โดยเน้นที่กลไกการเกิดเป็นหลัก			</li>
+			<li>พูดถึงชนิดต่างๆของ atrial arrhythmias เช่น atrial fibrillation | flutter | tachycardia</li>
+			<li>ความยากระดับพื้นฐานถึงปานกลาง เน้นที่กลไกการเกิดเป็นหลัก</li>
 			<li>มี intracardiac electrogram และ 3D-mapping ร่วมด้วย</li>
 			<li>เรื่อง anticoagulation ไม่เน้น</li>
 			<li>ดูจบแล้ว น่าจะรู้จักโรคนี้เพิ่มขึ้นไม่มากก็น้อย</li>
@@ -179,7 +193,7 @@ line-height: 150%;padding-top:1vmax}
 
 	</div>
 	<div class="text" style="color:#797979">
-		ระยะเวลา "30 วินาที" เป็น cutpoint ที่ใช้มาตั้งแต่อดีต และใช้เป็นคำจำกัดความสำหรับการวินิจฉัย AF ในงานวิจัยต่างๆ <br>
+		ระยะเวลา "30 วินาที" เป็น cutpoint ที่ใช้มาตั้งแต่อดีต และใช้เป็นคำจำกัดความเพื่อการวินิจฉัย AF ในงานวิจัยต่างๆ <br>
 		ระยะเวลา "30 วินาที" นี้ ไม่มีการศึกษารองรับและไม่มีความสัมพันธ์กับการพยากรณ์โรค
 	</div>
 	
@@ -192,6 +206,24 @@ line-height: 150%;padding-top:1vmax}
 		
 		</div>
 	
+	
+<div class="w3-btn next" onmouseover="blockNav(1)"></div>
+</div>
+
+<!--AF regular-->
+<div class="block gradient">
+	<div class="w3-container w3-center w3-padding">
+		<img src="" style="max-width: 100%;max-height: 60vh">
+		
+	</div>
+	<div class="headLine">
+		AF with regular ventricular response</div>
+	<div class="text">
+		ถ้า AV node ทำงานไม่ปกติ เช่น มี high grade AV block...การนำไฟฟ้าจากหัวใจห้องบนที่เป็น AF ลงมา
+		ยัง ventricles อาจจะไม่เกิดขึ้นเลย การเต้นของ ventricles ที่เกิดขึ้นจึงเกิดจาก escape rhythm จาก ventricles
+		เอง ...ซึ่งสม่ำเสมอ
+		
+	</div>
 	
 <div class="w3-btn next" onmouseover="blockNav(1)"></div>
 </div>
@@ -228,7 +260,7 @@ line-height: 150%;padding-top:1vmax}
 			Pulmonary venous muscle sleeves: หนึ่งในจุดกำเนิดของ AF</div>
 		<div class="text">
 			Muscle fibers ที่วิ่งจาก left atrium ไปพันรอบ pulmonary veins (PVs) สามารถเป็นจุดกำเนิดของ AF ได้ 
-			โดยใช้กลไกแบบ trigger และ/หรือ localized reentry <br><br>
+			โดยใช้กลไกแบบ trigger และ/หรือ automaticity และ/หรือ localized reentry <br><br>
 			Focal source ในลักษณะนี้มักจะเป็นกลไกหลักในคนไข้ที่เพิ่งเป็น AF มาในระยะแรก มากกว่าในกลุ่มที่เป็น AF มานานๆ
 			<div class="ref">
 				<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5846182/" target="_blank">
@@ -268,6 +300,31 @@ line-height: 150%;padding-top:1vmax}
 	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
 </div>
 
+<!--AF autonomic-->
+<div class="block wineBg">
+	<div class="w3-row w3-center w3-padding w3-white">
+		<img src="media/AF/GP.png" style="max-width:100%;max-height: 70vh">
+	</div>
+		
+	<div class="headLine wineBg">Autonomic Nervous System
+		</div>
+	<div class="text">
+		Sympathetic และ parasympathetic gangionic plexi มีอยู่อย่างน้อย 7 plexi ที่อยู่บริเวณ left atrium และ PVs <br>
+		พบว่าการกระตุ้น plexi เหล่านี้ ทำให้เกิด focal firing ออกมาจาก PV และทำให้เกิด AF ได้ <br>
+		อย่างไรก็ดี ประโยชน์ของการจี้ plexi เหล่านี้เพื่อลด AF ในปัจจุบันยังไม่ชัดเจน
+
+		<div class="ref">
+			<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291097-0185%28199702%29247%3A2%3C289%3A%3AAID-AR15%3E3.0.CO%3B2-L" target="_blank">
+				Anat Rec 1997;247:289–298</a> and
+				<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5846182/" target="_blank">
+					2017 HRS/EHRA/ECAS/APHRS/SOLAECE expert consensus statement on catheter and surgical ablation of
+					atrial fibrillation</a>
+		</div>
+	</div>
+	
+<div class="w3-btn next" onmouseover="blockNav(1)"></div>
+</div>
+
 <!--AF e remodelling-->
 <div class="block">
 		<div class="w3-container w3-center w3-padding">
@@ -288,6 +345,138 @@ line-height: 150%;padding-top:1vmax}
 		
 	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
 </div>
+
+<!--AF s remodelling-->
+<div class="block wineBg">
+	<div class="w3-container w3-white w3-center w3-padding">
+		<img src="media/AF/cracksinatrium.png" style="max-width: 100%;max-height: 70vh">
+		
+	</div>
+	<div class="headLine" >
+		Structural Remodelling</div>
+	<div class="text">
+		AF ถ้าเป็นต่อเนื่องนานๆ จะทำให้เกิด electrical remodelling และ structural remodelling <br>
+		Structural remodelling เกิดจากการที่มี Calcium คั่งในเซล เซลอักเสบ นำไปสู่การกระตุ้นให้เกิด fibrotic change <br>
+		เมื่อมีพังผืด (fibrosis) ในกล้ามเนื้อของ atrium จะทำให้การนำไฟฟ้าไม่เป็นระเบียบ และไม่ไปในทางเดียวกัน
+		ทำให้มีโอกาสเกิดวงจรไฟฟ้าหมุนวน (reentry) ทั้งเล็กและใหญ่ และทำให้ AF คงอยู่ได้นานขึ้นและหายยากมากขึ้น
+		<div class="ref">
+			<a href="https://www.ahajournals.org/doi/full/10.1161/CIRCEP.109.910125" target="_blank">
+				Allesie et al. Circ Arrhythm Electrophysiol 2010;3:606-615.</a>
+			</div>
+	</div>
+	
+<div class="w3-btn next" onmouseover="blockNav(1)"></div>
+</div>
+
+<!--AF RFM-->
+<div class="block w3-black">
+	<div class="w3-row">
+		<div class="w3-cell w3-cell-middle">
+		<img src="media/AF/RFM.jpg" style="width: 100%"></div>
+		<div class="w3-cell wineBg w3-padding">
+			<div class="headLine">ยังไม่หมดแค่นี้...<br>ยังมีปัจจัยจากโรคประจำตัวอื่นๆร่วมด้วย
+				</div>
+			<div class="text">
+				Obesity, physical inactivity, ความดันโลหิตสูง, และโรคที่เกี่ยวกับระบบ metabolic อีกหลายๆโรค
+				สัมพันธ์กับการเกิดและคงอยู่ของ AF <br><br>
+				การควบคุมภาวะเสี่ยงเหล่านี้ช่วยลดปริมาณ AF ได้
+				<div class="ref">
+					<a href="https://www.sciencedirect.com/science/article/pii/S0735109717395694?via%3Dihub" target="_blank">
+						Lavie et al. JACC 2017.</a> and
+					<a href="https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000000568" target="_blank">
+					2018 AHA Statement of AF Burden</a>
+				</div>
+			</div>
+		</div>
+	</div>
+			
+<div class="w3-btn next" onmouseover="blockNav(1)"></div>
+</div>
+
+<!--AF 4Rx Concepts-->
+<div class="block w3-black">
+	<div class="headLine" style="font-size: 5vmax">
+		หลักการรักษา AF ในปัจจุบันมี 4 ข้อ</div>
+	<div class="Rx1">
+		<div class="w3-cell RxBullet">1</div>
+		<div class="w3-cell RxText w3-cell-middle w3-padding">Rate Control</div>
+	</div>
+	<div class="Rx2">
+		<div class="w3-cell RxBullet">2</div>
+		<div class="w3-cell RxText w3-cell-middle w3-padding">Rhythm Control</div>
+	</div>
+	<div class="Rx3">
+		<div class="w3-cell RxBullet">3</div>
+		<div class="w3-cell RxText w3-cell-middle w3-padding">Thromboembolism Prevention</div>
+	</div>
+	<div class="Rx4">
+		<div class="w3-cell RxBullet">4</div>
+		<div class="w3-cell RxText w3-cell-middle w3-padding">Risk Factors Modification</div>
+	</div>
+				
+	
+		
+	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
+</div>
+
+<!--AF ablation-->
+<div class="block wineBg">
+		<div class="w3-row">
+			<div class="w3-col m12 l7 s6 w3-mobile">
+			<video width="100%" height="auto" autoplay muted loop>
+				<source src="media/AF/AF Abl_1.mp4" type="video/mp4">
+			</video>
+			</div>
+			<div class="w3-col m12 l5 s6 w3-mobile">
+				<div class="headLine" >Catheter Ablation for AF</div>
+				<div class="text">
+				เราจี้ AF เพื่อลดอาการ และ/หรือเพื่อทำให้ LV function ดีขึ้นในคนไข้ที่สงสัย AF induced cardiomyopathy <br>
+				<br>
+				นอกจากนี้แล้ว การจี้ AF อาจช่วยลดอัตราการเสียชีวิตในคนไข้ HFrEF บางกลุ่ม
+				<div class="ref">
+					<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5846182/" target="_blank">
+					2017 HRS/EHRA/ECAS/APHRS/SOLAECE expert consensus statement on catheter and surgical ablation of
+					atrial fibrillation</a>	and 
+					<a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1707855" target="_blank">
+					CASTLE AF</a>
+				</div>
+			</div>
+		</div>
+		
+	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
+	</div>
+
+<!--end pointer div-->
+</div>
+
+<!--AT AFL vs AF-->
+<div class="block">
+	<div class="headLine" style="color:#9f1d3f">
+		AF vs. Atrial Flutter(AFL) vs. Atrial Tachycardia (AT)
+	</div>
+		<div class="w3-row">
+			<div class="w3-col s4 w3-mobile">
+			<video width="100%" height="auto" autoplay muted loop>
+				<source src="media/AF.wmv" type="video/wmv">
+			</video>
+			</div>
+			<div class="w3-col s4 w3-mobile">
+			<video width="100%" height="auto" autoplay muted loop>
+				<source src="media/AFlutter.mp4" type="video/mp4"></video>
+			</div>
+			<div class="w3-col s4 w3-mobile">
+				<video width="100%" height="auto" autoplay muted loop>
+					<source src="media/AT.mp4" type="video/mp4"></video>
+			</div>	
+		</div>
+	<div class="text" style="color:#530f21;padding: 1vmax;margin-top: 1vmax">
+	ทั้ง 3 ภาวะนี้ต่างกันที่กลไกการเกิด <br>
+	ถ้าดูจาก EKG ในคนที่เป็น AFL หรือ AT จะเห็น P wave ที่มีรูปร่างชัดเจนและสม่ำเสมอกว่าคนที่เป็น AF <br>
+	ทั้ง 3 ภาวะนี้ อาจมี ventricular rate ที่สม่ำเสมอหรือไม่สม่ำเสมอก็ได้
+	</div>
+		
+	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
+	</div>
 
 <!--end pointer div-->
 </div>

@@ -161,11 +161,11 @@ line-height: 150%;padding-top:1vmax}
 <div class="block w3-black">
 	<div class="w3-cell-row" >
 	<div class="w3-cell w3-cell-middle w3-center w3-mobile">
-		<video id='AFLAT' width="100%" height="auto" poster muted loop onload="autoP('AFLAT')">
+		<video id='AFLAT' width="100%" height="auto" poster controls muted loop onloadeddata="autoP(this)">
 			<source src="media/AF/AF LAT.mp4" type="video/mp4">
 		</video>
 	</div>
-	<div class="w3-cell w3-center w3-cell-middle w3-mobile" id='vdo'>
+	<div class="w3-cell w3-center w3-cell-middle w3-mobile">
 		<img src="media/AF/AF EGM.jpg" style="width: 100%;" class="w3-sepia">
 		<img src="media/AF/AF RVR in CHF.jpg" style="width: 100%" class="w3-sepia">
 	</div>
@@ -835,22 +835,20 @@ window.addEventListener("keydown", function(event) {
 
 window.ontouchmove = function () {unblur()};
 
-var autoP = false;
-var playPromise = document.querySelector('video').play();
-if (playPromise !== undefined) {
-	playPromise.then(function() {
-    // Automatic playback started!
-	autoP = true;
-	})
-}
-  
-function autoP(id) {
-	document.getElementById('vdo').innerHTML = 'autoP =' + autoP;	
-	if (autoP){
-		document.getElementById(id).setAttribute('autoplay','');
+
+function autoP(elem) {
+	//check mobile browser	
+	if (screen.width>1024){
+		var notMobile = true;
 	}
-	else {
-	document.getElementById(id).setAttribute('controls',true);}
+	var id = elem.id;
+	var vid = document.getElementById(id);
+	if (notMobile){
+		document.getElementById('vdo').innerHTML = notMobile;
+		vid.play();
+		document.getElementById(id).removeAttribute('controls')
+		
+	}
 }
 
 </script>	

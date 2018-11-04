@@ -440,7 +440,7 @@ line-height: 150%;padding-top:1vmax}
 <div class="block wineBg">
 		<div class="w3-row">
 			<div class="w3-col m12 l7 s6 w3-mobile">
-			<video width="100%" height="auto" poster controls muted loop>
+			<video id='afAbl' width="100%" height="auto" poster controls muted loop onloadeddata="autoP(this)">
 				<source src="media/AF/AF Abl_1.mp4" type="video/mp4">
 			</video>
 			</div>
@@ -473,16 +473,16 @@ line-height: 150%;padding-top:1vmax}
 	</div>
 		<div class="w3-row">
 			<div class="w3-col s4 w3-mobile">
-			<video width="100%" height="auto" poster controls muted loop>
+			<video id='afIntro' width="100%" height="auto" poster controls muted loop onloadeddata="autoP(this)">
 				<source src="media/AF.mp4" type="video/mp4">
 			</video>
 			</div>
 			<div class="w3-col s4 w3-mobile">
-			<video width="100%" height="auto" poster controls muted loop>
+			<video id='aflIntro'  width="100%" height="auto" poster controls muted loop onloadeddata="autoP(this)">
 				<source src="media/AFlutter.mp4" type="video/mp4"></video>
 			</div>
 			<div class="w3-col s4 w3-mobile">
-				<video width="100%" height="auto" poster controls muted loop>
+				<video id='atIntro' width="100%" height="auto" poster controls muted loop onloadeddata="autoP(this)">
 					<source src="media/AT.mp4" type="video/mp4"></video>
 			</div>	
 		</div>
@@ -551,7 +551,7 @@ line-height: 150%;padding-top:1vmax}
 <div class="block w3-black">
 		<div class="w3-cell-row w3-center w3-mobile">
 			<div class="w3-cell w3-cell-middle w3-mobile" >
-				<video width="100%" height="auto" poster controls muted loop>
+				<video id='propAFL' width="100%" height="auto" poster controls muted loop onloadeddata="autoP(this)">
 				<source src="media/AFL/Propagation AFL.mp4" type="video/mp4">
 				</video>
 			</div>
@@ -613,7 +613,7 @@ line-height: 150%;padding-top:1vmax}
 						Entrainment ช่วยให้ idea คร่าวๆว่าวงจรอยู่แถวไหน	</div>
 				<div class="w3-cell-row w3-center" style="margin-top: 5vmax">
 					<div class="w3-cell w3-cell-middle w3-center w3-mobile">
-					<video width="100%" height="auto" poster controls muted loop>
+					<video id='aflASD' width="100%" height="auto" poster controls muted loop onloadeddata="autoP(this)">
 						<source src="media/AFL/AFL ASD/Periatriotomy .mp4" type="video/mp4">
 					</video></div>
 					<div class="w3-cell w3-cell-middle w3-center headLine w3-mobile" style="color:#310913">
@@ -724,7 +724,7 @@ line-height: 150%;padding-top:1vmax}
 <div class="block gradient">
 	<div class="w3-row">
 	<div class="w3-col l8 m8 s12">
-		<video id='ATRFA' width="100%" height="auto" poster controls muted loop onclick="removeCtrl('ATRFA')">
+		<video id='ATRFA' width="100%" height="auto" poster controls muted loop onloadeddata="autoP(this)">
 		<source src="media/AT/AT post AF RFA.mp4" type="video/mp4">
 		</video></div>
 	<div class="w3-col l4 m4 s12">
@@ -786,16 +786,40 @@ line-height: 150%;padding-top:1vmax}
 <div class="block w3-black">
 		<div class="headLine">
 			3D mapping helps..but only in those who understand the arrhythmias.</div>
-		<div class="w3-row w3-center w3-white">
-		<img src="" style="max-width:100%;max-height: 70vh;padding: 0.5vmax 0"></div>
-		<div class="text">
-				
-			<div class="ref">
-			<a href="https://www.clinicalkey.com/#!/content/book/3-s2.0-B9780323244299000134?indexOverride=GLOBAL">
-				Huang and Wood. Catheter Ablation of Cardiac Arrhythmias.
-			</a>
-			</div>
+		<div class="w3-row w3-center w3-white" style="padding:0.5vmin">
+		<img src="media/AT/RIPV/AT RIPV.jpg" style="max-width:100%;max-height: 70vh;padding: 0.5vmax 0">
+		<div class="text" style="color:#6c001b;text-align:left">
+			8 year-old kid, with persistent palpitation. No significant structural heart disease 
+			except mildly impaired LV function. <br>
+			จาก ECG... นึกถึง atrial tachycardia มากที่สุด
 		</div>		
+		<div style="border:#9f1d3f 0.1vmax solid;margin-top: 1vmax">
+			<img src="media/AT/RIPV/RA.jpg" style="max-width:100%;max-height: 70vh;padding: 0.5vmax 0">
+		<div class="text" style="color:#6c001b;">
+		แมพขวา (right atrium) ได้จุดที่เร็วที่สุด (สีแดง) ดังรูป...จี้ตรงนี้เลยมั้ย	</div></div>
+		<div style="border:#9f1d3f 0.1vmax solid;margin-top: 1vmax">
+			<img src="media/AT/RIPV/LA.jpg" style="max-width:100%;max-height: 70vh;padding: 0.5vmax 0">
+			<div class="text" style="color:#6c001b;">
+			จุดที่เร็วที่สุดใน right atrium ไม่ได้เร็วมากและอยู่ตรง interatrial septum พอดี...<br>
+			ต้องคิดว่ามีที่ที่เรายังไม่ได้แมพ ที่เร็วกว่านี้มั้ย เช่น ใน left atrium</div></div>
+		<div style="margin-top: 1vmax">
+			<div class="w3-row w3-center w3-black">
+				<div class="w3-col s6 w3-mobile">
+					<video id='RIPV' width="100%" height="auto" poster controls muted loop onloadeddata="autoP(this)">
+					<source src="media/AT/RIPV/AT RIPV.mp4" type="video/mp4">
+					</video>	
+				</div>
+				<div class="w3-col s6 w3-mobile">
+				<img src="media/AT/RIPV/RA LA.jpg" style="max-width:100%;max-height: 70vh;padding: 0.5vmax 0"></div>
+			</div>
+			<div class="text" style="color:#6c001b;">
+				Dx: Focal AT from RIPV <br>
+				สังเกตว่า right pulmonary veins อยู่ซ้อนด้านหลังของ right atrium เลย
+				ทำให้สัญญาณใน proximal CS เร็วกว่า distal CS เลยอาจจะทำให้ดูเหมือนว่าจุดที่เร็วที่สุดอาจมาจาก right atrium
+			</div>
+		</div>
+
+		</div>
 	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
 	</div>
 

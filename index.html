@@ -835,17 +835,13 @@ window.addEventListener("keydown", function(event) {
 
 window.ontouchmove = function () {unblur()};
 
-var autoP;
+var autoP = false;
 var playPromise = document.querySelector('video').play();
 if (playPromise !== undefined) {
 	playPromise.then(function() {
     // Automatic playback started!
 	autoP = true;
-	document.getElementById('vdo').innerHTML = autoP;
-  }).catch(function(error) {
-    document.getElementById('vdo').innerHTML = autoP;
-	autoP = false;
-  });
+	})
 }
   
 function autoP(id) {
@@ -854,7 +850,6 @@ function autoP(id) {
 		document.getElementById(id).setAttribute('autoplay','');
 	}
 	else {
-	document.getElementById(id).removeAttribute('autoplay');
 	document.getElementById(id).setAttribute('controls',true);}
 }
 

@@ -841,14 +841,15 @@ if (playPromise !== undefined) {
 	playPromise.then(function() {
     // Automatic playback started!
 	autoP = true;
-	document.getElementById('vdo').innerHTML = 'sp';
+	document.getElementById('vdo').innerHTML = autoP;
   }).catch(function(error) {
-    document.getElementById('vdo').innerHTML = 'unsp';
+    document.getElementById('vdo').innerHTML = autoP;
 	autoP = false;
   });
 }
   
 function autoP(id) {
+	document.getElementById('vdo').innerHTML = 'autoP =' + autoP;	
 	if (autoP){
 		document.getElementById(id).setAttribute('autoplay','');
 	}

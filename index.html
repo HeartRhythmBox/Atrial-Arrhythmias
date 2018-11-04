@@ -159,13 +159,13 @@ line-height: 150%;padding-top:1vmax}
 
 <!--AF intro-->
 <div class="block w3-black">
-	<div class="w3-cell-row" id='vdo'>
+	<div class="w3-cell-row" >
 	<div class="w3-cell w3-cell-middle w3-center w3-mobile">
 		<video id='AFLAT' width="100%" height="auto" poster muted loop onload="autoP('AFLAT')">
 			<source src="media/AF/AF LAT.mp4" type="video/mp4">
 		</video>
 	</div>
-	<div class="w3-cell w3-center w3-cell-middle w3-mobile">
+	<div class="w3-cell w3-center w3-cell-middle w3-mobile" id='vdo'>
 		<img src="media/AF/AF EGM.jpg" style="width: 100%;" class="w3-sepia">
 		<img src="media/AF/AF RVR in CHF.jpg" style="width: 100%" class="w3-sepia">
 	</div>
@@ -835,14 +835,16 @@ window.addEventListener("keydown", function(event) {
 
 window.ontouchmove = function () {unblur()};
 
+var autoP;
 var playPromise = document.querySelector('video').play();
 if (playPromise !== undefined) {
 	playPromise.then(function() {
     // Automatic playback started!
-	var autoP = true;
+	autoP = true;
 	document.getElementById('vdo').innerHTML = 'sp';
   }).catch(function(error) {
-    document.getElementById('vdo').innerHTML = 'unsp'
+    document.getElementById('vdo').innerHTML = 'unsp';
+	autoP = false;
   });
 }
   
@@ -851,7 +853,8 @@ function autoP(id) {
 		document.getElementById(id).setAttribute('autoplay','');
 	}
 	else {
-	document.getElementById(id).setAttribute('controls','');}
+	document.getElementById(id).removeAttribute('autoplay');
+	document.getElementById(id).setAttribute('controls',true);}
 }
 
 </script>	

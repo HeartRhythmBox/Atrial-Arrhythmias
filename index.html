@@ -837,11 +837,15 @@ window.ontouchmove = function () {unblur()};
 
 var playPromise = document.querySelector('video').play();
 if (playPromise !== undefined) {
-  	var autoP = true;
-	  document.getElementById('vdo').innerHTML = 'sp'
-	}
-else {document.getElementById('vdo').innerHTML = 'unsp'}
-
+	playPromise.then(function() {
+    // Automatic playback started!
+	var autoP = true;
+	document.getElementById('vdo').innerHTML = 'sp';
+  }).catch(function(error) {
+    document.getElementById('vdo').innerHTML = 'unsp'
+  });
+}
+  
 function autoP(id) {
 	if (autoP){
 		document.getElementById(id).setAttribute('autoplay','');

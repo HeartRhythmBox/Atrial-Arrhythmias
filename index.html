@@ -161,7 +161,7 @@ line-height: 150%;padding-top:1vmax}
 <div class="block w3-black">
 	<div class="w3-cell-row">
 	<div class="w3-cell w3-cell-middle w3-center w3-mobile">
-		<video width="100%" height="auto" poster controls muted loop>
+		<video id='AFLAT' width="100%" height="auto" poster muted loop onload="autoP('AFLAT')">
 			<source src="media/AF/AF LAT.mp4" type="video/mp4">
 		</video>
 	</div>
@@ -724,7 +724,7 @@ line-height: 150%;padding-top:1vmax}
 <div class="block gradient">
 	<div class="w3-row">
 	<div class="w3-col l8 m8 s12">
-		<video width="100%" height="auto" poster playsinline autoplay muted loop>
+		<video id='ATRFA' width="100%" height="auto" poster controls muted loop onclick="removeCtrl('ATRFA')">
 		<source src="media/AT/AT post AF RFA.mp4" type="video/mp4">
 		</video></div>
 	<div class="w3-col l4 m4 s12">
@@ -834,6 +834,19 @@ window.addEventListener("keydown", function(event) {
 })
 
 window.ontouchmove = function () {unblur()};
+
+var playPromise = document.querySelector('video').play();
+if (playPromise !== undefined) {
+  	var autoP = true;
+}
+
+function autoP(id) {
+	if (autoP){
+		document.getElementById(id).setAttribute('autoplay','');
+	}
+	else {
+	document.getElementById(id).setAttribute('controls','');}
+}
 
 </script>	
 

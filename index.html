@@ -3,18 +3,11 @@
 <head>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119340815-9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-119340815-9');
-</script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href="https://fonts.googleapis.com/css?family=Monoton|Pridi|Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Prompt&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 
@@ -39,13 +32,6 @@
     100%{opacity: 1;}
     }
 
-.next {
-    position: absolute; display: inline;
-    left: 98vw; 
-    background-color: transparent;
-    color: transparent;
-}
-
 .toTop {
     position: fixed; 
     background-color: transparent; color:#d8d8d0 ;
@@ -61,7 +47,7 @@
 }
 
 .aGradient {
-    width: 100vw; height: 100vh;
+    width: 100%; height: 100%;
 	background: linear-gradient(-45deg, #000, #310913, #530f21, #6c001b);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
@@ -110,21 +96,16 @@
 .pinkTxt {color:#f6cdd8}
 
 .cursive {font-family: 'Monoton', cursive;}
-.cursive2 {font-family: 'Righteous', cursive;}
-.thai {font-family: 'Pridi', serif;}
+.thai {font-family: 'Prompt', serif;}
 
 .theA {font-family: 'Monoton', cursive;font-size: 80vh;color:#74152e;line-height: 90%;
 overflow: hidden;white-space: nowrap;text-overflow: clip}
-.pageTitle {font-size:5.5vmax;color:white;font-family: 'Righteous', cursive;line-height: 0%}
-@media only screen and (max-width:600px){
-	.theA {font-size: 50vh;line-height: 110%}
-    .pageTitle {font-size: 4.5vmax;line-height: 50%}
-}
+.pageTitle {font-size:5.5vmax;color:white;font-family: 'Prompt', serif;line-height: 80%;font-weight: 500;}
 
 .block {padding: 4vmax 1vmax}
 .listHover li:hover {color: white}
-.headLine {font-family: 'Pridi', serif;font-size: 3.5vmax;color:#f6cdd8;padding:1vmax;;line-height: 110%}
-.text {font-family: 'Pridi', serif;font-size: 2vmax;color:#FCf2f5;padding:1vmax;;line-height: 110%}
+.headLine {font-family: 'Prompt', serif;font-size: 3.5vmax;color:#f6cdd8;padding:1vmax;;line-height: 110%}
+.text {font-family: 'Prompt', serif;font-size: 2vmax;color:#FCf2f5;padding:1vmax;;line-height: 110%}
 .ref {color:#abab9a;font-size: 1vmax;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 line-height: 150%;padding-top:1vmax}
 
@@ -143,7 +124,7 @@ line-height: 150%;padding-top:1vmax}
 @media only screen and (max-width:600px){
 	.cTitle {font-size:5vmax}
 }
-.cList {padding: 1vmax 1vmax 2.5vmax 1vmax;font-family: 'Pridi', serif;font-size:2.5vmax;color:#abab9a;text-align: left}
+.cList {padding: 1vmax 1vmax 2.5vmax 1vmax;font-family: 'Prompt', serif;font-size:2.5vmax;color:#abab9a;text-align: left}
 .cList li:hover {color: #f6cdd8}
 
 </style>
@@ -154,16 +135,14 @@ line-height: 150%;padding-top:1vmax}
         <span class="theA">A</span>
         <br>
         <span class="pageTitle" >
-        Atrial Arrhythmias
+        Ablation of Atrial Flutter<br>& Atrial Tachycardia
         </span>
     </div>
-    <div class="thai w3-wide w3-padding" style="color: #d8d8d0;font-size: 2.2vmax">
-       electrophysiology perspective | มุมมองของช่างไฟฟ้าหัวใจ
-    </div>
-    <div class="thai" style="padding-top: 1vmax;font-size: 1.8vmax;color:#abab9a">
-        <a href="https://www.facebook.com/HeartRhythmBox/" style="text-decoration:none" target="_blank">
-        <i class="fab fa-facebook-square" style="font-size: 2vmax;color:#abab9a;"></i>
-        HeartRhythmBox
+    
+    <div class="Thai" style="padding: 3vh;font-size: 1.7vmax;color:#abab9a">
+        <a href="https://www.HeartRhythmBox.com/" style="text-decoration:none" target="_blank">
+        <img src="box coral.png" style="width: 2.5vmax;">
+        heartRhythmBox
         </a>
     </div>
     
@@ -174,335 +153,10 @@ line-height: 150%;padding-top:1vmax}
 <a href="#top" title="to the top" class="toTop" onclick="unblur()">
 	<i class="fas fa-arrow-circle-up" style="font-size: 2.8vmax"></i>
 </a>
-<!--about-->
-<div class="block wineBg">
-	<div class="w3-row cursive cremeTxt w3-center" style="font-size: 5vmax;">About</div>
-	<div class="w3-row thai" style="font-size:3.5vmax;color:white;padding: 3vmax">
-		Presentation นี้...	
-		<ul class="w3-ul pinkTxt listHover" style="font-size:2.5vmax;padding: 0 2vmax">
-			<li>พูดถึงชนิดต่างๆของ atrial arrhythmias เช่น atrial fibrillation | flutter | tachycardia</li>
-			<li>ความยากระดับพื้นฐานถึงปานกลาง เน้นที่กลไกการเกิดเป็นหลัก</li>
-			<li>มี intracardiac electrogram และ 3D-mapping ร่วมด้วย</li>
-			<li>เรื่อง anticoagulation ไม่เน้น</li>
-			<li>ดูจบแล้ว น่าจะรู้จักโรคนี้เพิ่มขึ้นไม่มากก็น้อย</li>
-			<li>อาจจะงงเพิ่มขึ้นบ้าง แต่น่าจะเป็นจุดเริ่มต้นการเรียนรู้ที่ดี</li>
-		</ul>
-	</div>
-	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
-</div>
-
-<!--AF intro-->
-<div class="block w3-black">
-	<div class="w3-cell-row" >
-	<div class="w3-cell w3-cell-middle w3-center w3-mobile">
-		<video id='AFLAT' width="100%" height="auto" poster controls muted loop onclick="autoP(this)">
-			<source src="media/AF/AF LAT.mp4" type="video/mp4">
-		</video>
-	</div>
-	<div class="w3-cell w3-center w3-cell-middle w3-mobile">
-		<img src="media/AF/AF EGM.jpg" style="width: 100%;">
-		<img src="media/AF/AF RVR in CHF.jpg" style="width: 100%">
-	</div>
-	</div>
-	<div class="headLine">
-		Atrial Fibrillation = สับสน ไม่สม่ำเสมอ ไม่มีระเบียบ...<br> 
-		ของหัวใจห้องบนทั้งสองห้อง หรืออาจเป็นเฉพาะห้องบนซ้ายห้องเดียวก็ได้</div>
-	<div class="text">
-		ถ้าการทำงานของ AV node ปกติ ไฟฟ้าจากหัวใจห้องบนที่เป็น AF จะนำสู่ห้องล่างอย่างไม่สม่ำเสมอ ทำให้ผู้ป่วยภาวะ AF 
-		มีชีพจรที่ไม่สม่ำเสมอ -- totally irregular.
-	</div>
-	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
-</div>
-
-<!--AF def-->
-<div class="block">
-	<div class="w3-cell-row">
-		<div class="w3-cell w3-cell-middle w3-center cursive w3-center w3-mobile" 
-		style="background-color:#74152e;color:white;font-size: 15vmax;padding: 4vmax">
-		30<span style="font-size:5vmax">s</span></div>
-		<div class="w3-cell w3-cell-middle thai w3-center w3-mobile" 
-		style="background-color:white;font-size: 4vmax;border:#74152e solid 1vmax">
-		AF ต้องเป็นนานอย่างน้อย 30วินาที <br> หรือนานพอที่จะบันทึกได้ใน 12-lead ECG.
-		</div>
-
-	</div>
-	<div class="text" style="color:#797979">
-		ระยะเวลา "30 วินาที" เป็น cutpoint ที่ใช้มาตั้งแต่อดีต และใช้เป็นคำจำกัดความเพื่อการวินิจฉัย AF ในงานวิจัยต่างๆ <br>
-		ระยะเวลา "30 วินาที" นี้ ไม่มีการศึกษารองรับและไม่มีความสัมพันธ์กับการพยากรณ์โรค
-	</div>
-	
-	<div class="ref w3-padding">
-		<a href="https://academic.oup.com/eurheartj/article/37/38/2893/2334964" target="_blank">
-				2016 ESC Guidelines for the management of atrial fibrillation</a> and
-		<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5846182/" target="_blank">
-			2017 HRS/EHRA/ECAS/APHRS/SOLAECE expert consensus statement on catheter and surgical ablation of
-			atrial fibrillation</a> 
-		
-		</div>
-	
-	
-<div class="w3-btn next" onmouseover="blockNav(1)"></div>
-</div>
-
-<!--AF regular-->
-<div class="block gradient">
-	<div class="w3-row w3-center">
-		<div class="w3-col s6 w3-mobile w3-padding">
-			<img src="media/AF/AF slow junc.png" style="width: 100%">
-		</div>
-		<div class="w3-col s6 w3-mobile w3-padding">
-			<img src="media/AF/AF BiVpacing.png" style="width: 100%">
-		</div>
-		
-	</div>
-	<div class="headLine">
-		AF with regular ventricular response</div>
-	<div class="text">
-		ถ้า AV node ทำงานไม่ปกติ เช่น มี high grade AV block...การนำไฟฟ้าจากหัวใจห้องบนที่เป็น AF ลงมา
-		ยัง ventricles อาจจะไม่เกิดขึ้นเลย การเต้นของ ventricles ที่เกิดขึ้นจึงเกิดจาก escape rhythm จาก ventricles
-		เอง ...ซึ่งสม่ำเสมอ
-		
-	</div>
-	
-<div class="w3-btn next" onmouseover="blockNav(1)"></div>
-</div>
-
-<!--AF Mech-->
-<div class="block">
-		<div class="w3-container w3-center w3-padding">
-			<img src="media/AF/AFallMechanisms.jpg" style="max-width: 100%;max-height: 60vh">
-			
-		</div>
-		<div class="headLine" style="color:#6c001b">
-			Atrial Fibrillation เกิดได้อย่างไร</div>
-		<div class="text gradient" style="color:#f1f1f1">
-			คำตอบคือ มีหลายปัจจัยและหลายกลไก ไม่ว่าจะเป็น...อายุ โรคประจำตัวต่างๆ กรรมพันธุ์ <br>
-			กลไกที่ทำให้เกิดมีตั้งแต่ การมีจุดปล่อยไฟฟ้าผิดปกติจาก pulmonary veins, การมีพังผืดในหัวใจห้องบน, 
-			ระบบประสาทอัตโนมัติที่ทำงานผิดปกติ และอื่นๆ 
-			<div class="ref">
-				<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5846182/" target="_blank">
-					2017 HRS/EHRA/ECAS/APHRS/SOLAECE expert consensus statement on catheter and surgical ablation of
-					atrial fibrillation</a>
-				</div>
-		</div>
-		
-	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
-</div>
-
-<!--AF PV foci-->
-<div class="block w3-black">
-		<div class="w3-row w3-center w3-padding">
-			<img src="media/AF/PV muscle sleeves.png" style="max-width: 100%;max-height: 60vh">
-		</div>
-			
-		<div class="headLine wineBg">
-			Pulmonary venous muscle sleeves: หนึ่งในจุดกำเนิดของ AF</div>
-		<div class="text">
-			Muscle fibers ที่วิ่งจาก left atrium ไปพันรอบ pulmonary veins (PVs) สามารถเป็นจุดกำเนิดของ AF ได้ 
-			โดยใช้กลไกแบบ trigger และ/หรือ automaticity และ/หรือ localized reentry <br><br>
-			Focal source ในลักษณะนี้มักจะเป็นกลไกหลักในคนไข้ที่เพิ่งเป็น AF มาในระยะแรก มากกว่าในกลุ่มที่เป็น AF มานานๆ
-			<div class="ref">
-				<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5846182/" target="_blank">
-					2017 HRS/EHRA/ECAS/APHRS/SOLAECE expert consensus statement on catheter and surgical ablation of
-					atrial fibrillation</a> and
-				<a href="https://academic.oup.com/eurheartj/article/37/38/2893/2334964" target="_blank">
-					2016 ESC Guidelines for the management of atrial fibrillation</a>
-				</div>
-		</div>
-		
-	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
-</div>
-
-<!--AF PV foci EGM-->
-<div class="block wineBg">
-		<div class="w3-row w3-center w3-padding">
-			<div class="w3-col s6 w3-padding">
-				<img src="media/AF/Frequent PACs EGM.JPG" style="width:100%">
-			</div>
-			<div class="w3-col s6 w3-padding">
-				<img src="media/AF/PVFocusAF.png" style="width:100%">
-				<div class="ref">
-				<a href="https://www.nejm.org/doi/full/10.1056/NEJM199809033391003" target="_blank">
-					Haïssaguerre, M. NEJM 1998;339:659-66.
-				</a>
-				</div>
-			</div>
-		</div>
-			
-		<div class="headLine wineBg">Focal firing จาก PVs สามารถทำให้เกิดทั้ง premature atrial beats,
-			premature atrial contraction, และ/หรือ atrial fibrillation ได้
-			</div>
-		<div class="text">
-			การทำ pulmonary veins isolatation จึงสามารถช่วยลดการเกิดและการคงอยู่ของ AF ที่เกิดจากกลไกนี้ได้			
-		</div>
-		
-	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
-</div>
-
-<!--AF autonomic-->
-<div class="block wineBg">
-	<div class="w3-row w3-center w3-padding w3-white">
-		<img src="media/AF/GP.png" style="max-width:100%;max-height: 70vh">
-	</div>
-		
-	<div class="headLine wineBg">Autonomic Nervous System
-		</div>
-	<div class="text">
-		Sympathetic และ parasympathetic gangionic plexi มีอยู่อย่างน้อย 7 plexi ที่อยู่บริเวณ left atrium และ PVs <br>
-		พบว่าการกระตุ้น plexi เหล่านี้ ทำให้เกิด focal firing ออกมาจาก PV และทำให้เกิด AF ได้ <br>
-		อย่างไรก็ดี ประโยชน์ของการจี้ plexi เหล่านี้เพื่อลด AF ในปัจจุบันยังไม่ชัดเจน
-
-		<div class="ref">
-			<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291097-0185%28199702%29247%3A2%3C289%3A%3AAID-AR15%3E3.0.CO%3B2-L" target="_blank">
-				Anat Rec 1997;247:289–298</a> and
-				<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5846182/" target="_blank">
-					2017 HRS/EHRA/ECAS/APHRS/SOLAECE expert consensus statement on catheter and surgical ablation of
-					atrial fibrillation</a>
-		</div>
-	</div>
-	
-<div class="w3-btn next" onmouseover="blockNav(1)"></div>
-</div>
-
-<!--AF e remodelling-->
-<div class="block">
-		<div class="w3-container w3-center w3-padding">
-			<img src="media/AF/Electrical Remodelling.jpg" style="max-width: 100%;max-height: 70vh">
-			
-		</div>
-		<div class="headLine" style="color:#6c001b">
-			Electrical Remodelling</div>
-		<div class="text gradient" style="color:#f1f1f1">
-			เซลที่โดนกระตุ้นจากสัญญาณที่มีความถี่สูงจะเกิดภาวะ Calcium คั่งในเซล และอาจทำให้เซลนั้นๆตายได้ <br>
-			เซลจึงต้องปรับตัวโดยการลดการนำ Calcium เข้าเซล ซึ่งจะทำให้ refractory period ของเซลสั้นลง <br>
-			การปรับตัวแบบนี้ทำให้เซลอยู่รอด แต่ก็ทำให้ AF เป็นนานขึ้นและเป็นง่ายขึ้น
-			<div class="ref">
-				<a href="https://www.nature.com/articles/415219a" target="_blank">
-					S Nattel. Nature 2002.</a>
-				</div>
-		</div>
-		
-	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
-</div>
-
-<!--AF s remodelling-->
-<div class="block wineBg">
-	<div class="w3-row w3-white w3-center">
-		<div class="w3-col s4 w3-padding w3-mobile">
-		<img src="media/AF/cracksinatrium.png" style="width: 100%;">
-		</div>
-		<div class="w3-col s4 w3-padding w3-mobile">
-		<img src="media/AF/CAFE.png" style="width: 100%;">
-		</div>
-		<div class="w3-col s4 w3-padding w3-mobile">
-			<img src="media/AF/CAFE2.png" style="width: 100%;">
-		</div>
-		
-	</div>
-	<div class="headLine" >
-		Structural Remodelling</div>
-	<div class="text">
-		AF ถ้าเป็นต่อเนื่องนานๆ จะทำให้เกิด electrical remodelling และ structural remodelling <br>
-		Structural remodelling เกิดจากการที่มี Calcium คั่งในเซล เซลอักเสบ นำไปสู่การกระตุ้นให้เกิด fibrotic change <br>
-		เมื่อมีพังผืด (fibrosis) ในกล้ามเนื้อของ atrium จะทำให้การนำไฟฟ้าไม่เป็นระเบียบ มีความเร็วช้าไม่เท่ากัน และไม่ไปในทางเดียวกัน
-		ทำให้มีโอกาสเกิดวงจรไฟฟ้าหมุนวน (reentry) ทั้งเล็กและใหญ่ และทำให้ AF คงอยู่ได้นานขึ้นและหายยากมากขึ้น <br><br>
-		บริเวณที่มีการนำไฟฟ้าผิดปกติในลักษณะนี้ มักจะมี local electrogram ที่เป็น 
-		complex fractionated atrial electrogram (CFAE)
-		<div class="ref">
-			<a href="https://www.ahajournals.org/doi/full/10.1161/CIRCEP.109.910125" target="_blank">
-				Allesie et al. Circ Arrhythm Electrophysiol 2010;3:606-615.</a> and
-			<a href="https://www.sciencedirect.com/science/article/pii/S0735109704005716" target="_blank">
-			Nademanee et al. JACC 2004.</a>
-			</div>
-	</div>
-	
-<div class="w3-btn next" onmouseover="blockNav(1)"></div>
-</div>
-
-<!--AF RFM-->
-<div class="block w3-black">
-	<div class="w3-row">
-		<div class="w3-cell w3-cell-middle w3-mobile">
-		<img src="media/AF/RFM.jpg" style="width: 100%"></div>
-		<div class="w3-cell wineBg w3-padding w3-mobile">
-			<div class="headLine">ยังไม่หมดแค่นี้...<br>ยังมีปัจจัยจากโรคประจำตัวอื่นๆร่วมด้วย
-				</div>
-			<div class="text">
-				Obesity, physical inactivity, ความดันโลหิตสูง, และโรคที่เกี่ยวกับระบบ metabolic อีกหลายๆโรค
-				สัมพันธ์กับการเกิดและคงอยู่ของ AF <br><br>
-				การควบคุมภาวะเสี่ยงเหล่านี้ช่วยลดปริมาณ AF ได้
-				<div class="ref">
-					<a href="https://www.sciencedirect.com/science/article/pii/S0735109717395694?via%3Dihub" target="_blank">
-						Lavie et al. JACC 2017.</a> and
-					<a href="https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000000568" target="_blank">
-					2018 AHA Statement of AF Burden</a>
-				</div>
-			</div>
-		</div>
-	</div>
-			
-<div class="w3-btn next" onmouseover="blockNav(1)"></div>
-</div>
-
-<!--AF 4Rx Concepts-->
-<div class="block w3-black">
-	<div class="headLine" style="font-size: 5vmax">
-		หลักการรักษา AF ในปัจจุบันมี 4 ข้อ</div>
-	<div class="Rx1">
-		<div class="w3-cell RxBullet">1</div>
-		<div class="w3-cell RxText w3-cell-middle w3-padding">Rate Control</div>
-	</div>
-	<div class="Rx2">
-		<div class="w3-cell RxBullet">2</div>
-		<div class="w3-cell RxText w3-cell-middle w3-padding">Rhythm Control</div>
-	</div>
-	<div class="Rx3">
-		<div class="w3-cell RxBullet">3</div>
-		<div class="w3-cell RxText w3-cell-middle w3-padding">Thromboembolism Prevention</div>
-	</div>
-	<div class="Rx4">
-		<div class="w3-cell RxBullet">4</div>
-		<div class="w3-cell RxText w3-cell-middle w3-padding">Risk Factors Modification</div>
-	</div>
-				
-	
-		
-	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
-</div>
-
-<!--AF ablation-->
-<div class="block wineBg">
-		<div class="w3-row">
-			<div class="w3-col m12 l7 s6 w3-mobile">
-			<video id='afAbl' width="100%" height="auto" poster controls muted loop onclick="autoP(this)">
-				<source src="media/AF/AF Abl_1.mp4" type="video/mp4">
-			</video>
-			</div>
-			<div class="w3-col m12 l5 s6 w3-mobile">
-				<div class="headLine" >Catheter Ablation for AF</div>
-				<div class="text">
-				เราจี้ AF เพื่อลดอาการ และ/หรือเพื่อทำให้ LV function ดีขึ้นในคนไข้ที่สงสัย AF induced cardiomyopathy <br>
-				<br>
-				นอกจากนี้แล้ว การจี้ AF อาจช่วยลดอัตราการเสียชีวิตในคนไข้ HFrEF บางกลุ่ม
-				<div class="ref">
-					<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5846182/" target="_blank">
-					2017 HRS/EHRA/ECAS/APHRS/SOLAECE expert consensus statement on catheter and surgical ablation of
-					atrial fibrillation</a>	and 
-					<a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1707855" target="_blank">
-					CASTLE AF</a>
-				</div>
-			</div>
-		</div>
-		
-	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
-	</div>
-
-<!--end pointer div-->
-</div>
 
 <!--AT AFL vs AF-->
-<div class="block">
-	<div class="headLine" style="color:#9f1d3f">
+<div class="block" style="background-color: #abab9a;">
+	<div class="headLine" style="color:#530f21">
 		AF vs. Atrial Flutter(AFL) vs. Atrial Tachycardia (AT)
 	</div>
 		<div class="w3-row">
@@ -620,10 +274,9 @@ line-height: 150%;padding-top:1vmax}
 		</a>
 		</div>
 	</div>		
-<div class="w3-btn next" onmouseover="blockNav(1)"></div>
 </div>
 
-<!--AFL ASD-->
+<!--AFL ASD--
 <div class="block">
 		<div class="w3-container w3-center">
 				<div class="headLine" style="color:#530f21;text-align: left">
@@ -658,8 +311,7 @@ line-height: 150%;padding-top:1vmax}
 					</div>
 				</div>
 			</div>
-<div class="w3-btn next" onmouseover="blockNav(1)"></div>
-</div>
+</div-->
 
 <!--AT intro-->
 <div class="block wineBg">
@@ -690,8 +342,7 @@ line-height: 150%;padding-top:1vmax}
 				</a>
 				</div>
 		</div>
-		
-	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
+
 </div>
 
 <!--AT location-->
@@ -706,8 +357,7 @@ line-height: 150%;padding-top:1vmax}
 			style="max-width:100%;"></div>
 		
 		</div>	
-	
-	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
+
 </div>
 
 <!--micro vs macro-->
@@ -751,7 +401,6 @@ line-height: 150%;padding-top:1vmax}
 				</div>
 		</div>
 		
-	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
 	</div>
 
 <!--AT radial activation-->
@@ -769,11 +418,9 @@ line-height: 150%;padding-top:1vmax}
 		รวมแล้วเป็นระยะเวลาน้อยกว่า 70% ของ tachycardia cycle length
 	</div></div>
 	</div>
-
-<div class="w3-btn next" onmouseover="blockNav(1)"></div>
 </div>
 
-<!--AT post transplant-->
+<!--AT post transplant--
 <div class="block">
 	<div class="headLine" style="color:#74152e">
 			Case: 44F s/p heart transplant 8 years ago; bicaval technique, presents with palpitation.
@@ -812,11 +459,9 @@ line-height: 150%;padding-top:1vmax}
 			<img src="media/AT/post Tx/term carto.png" style="width:100%">
 			</div>
 	</div>
-		
-	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
-	</div>
+	</div-->
 
-<!--3D mapping-->
+<!--3D mapping--
 <div class="block w3-black">
 		<div class="headLine">
 			3D mapping ช่วยเก็บข้อมูลของตำแหน่งและสัญญาณ ทำให้เรามองกลไกของ tachycardia ได้ง่ายขึ้น 
@@ -856,8 +501,8 @@ line-height: 150%;padding-top:1vmax}
 		</div>
 
 		</div>
-	<div class="w3-btn next" onmouseover="blockNav(1)"></div>
-	</div>
+
+	</div-->
 
 <!--conclusions-->
 <div class="aGradient block" style="padding:0;height: fit-content">
@@ -921,7 +566,6 @@ window.addEventListener("keydown", function(event) {
 window.ontouchmove = function () {unblur()};
 window.onscroll = function() {scroll()};
 
-
 function autoP(elem) {
 	//check mobile browser	
 	if (screen.width>1024){
@@ -940,3 +584,4 @@ function autoP(elem) {
 
 </body>
 </html>
+

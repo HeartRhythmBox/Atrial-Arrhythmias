@@ -38,7 +38,7 @@
     vertical-align: middle}
 
     .caption {font-family: Montserrat, sans-serif;font-size: medium;
-      position: absolute;text-align: center;color:white;
+      position: absolute;text-align: center;color:white;padding: 0 1vmax;
       bottom: 0;
       left: 0;
       right: 0;
@@ -100,14 +100,26 @@
       class="contain"></amp-img>
       <div class="caption">32M with DCM; likely tachycardia induced. ECG shows long RP, narrow complex tachycardia.</div>
     </div>
-    
-    <!--egm-->       
+
+    <!--egm-->
     <div class="container">
-      <amp-img src="media\AT\Septal AT\VAAV.jpg"
+      <amp-img id="case1" src="media\AT\Septal AT\Tachycardia.jpg"
+      layout="fill"
+      class="contain"></amp-img>
+      <div class="caption">EGM shows narrow complex tachycardia with variable VA time.
+      In the last 2 beats, tachycardia CL increases. Change in A-A times precedes change in V-V time. AT is preferred.          
+      </div>
+    </div>
+    
+    <!--entrain-->       
+    <div class="container">
+      <amp-img src="media\AT\Septal AT\entrain.jpg"
       layout="fill"
       class="contain">
       </amp-img>
-      <div class="caption">EGM: V entrainment results in V-A-A-V response consistent with AT.</div>
+      <div class="caption">EGM: V pacing during tachycardia is unable to conduct to A. Tachycardia continued without interuption.
+        AVRT is excluded.
+      </div>
     </div>
 
     <!--carto-->       
